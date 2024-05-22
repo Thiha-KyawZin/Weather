@@ -27,12 +27,3 @@ export const url = {
         return `http://api.openweathermap.org/geo/1.0/reverse?${lat}&${lon}`
     },
 }
-
-// const a = (num, fun) => {
-//     let jsonD = fun(num);
-//     console.log(jsonD);
-// }
-
-// a(5, (x) => {
-//     return x + 5;
-// });
