@@ -92,7 +92,7 @@ export const updateWeather = (lat, lon) => {
         const {
             weather,
             dt: dateUnix,
-            sys: { sunrise: sunriseUnixUTC, simset: sumsetUnixUTC },
+            sys: { sunrise: sunriseUnixUTC, sunset: sunsetUnixUTC },
             main: {temp, feels_like, pressure, humidity},
             visibility,
             timezone
@@ -180,7 +180,7 @@ export const updateWeather = (lat, lon) => {
                                     <span class="icon"><i class="fa-solid fa-moon"></i></span>
                                     <div>
                                         <p class="label-1">Sunset</p>
-                                        <p class="title-1">${module.getTime(sumsetUnixUTC, timezone)}</p>
+                                        <p class="title-1">${module.getTime(sunsetUnixUTC, timezone)}</p>
                                     </div>
                                 </div>
                             </div>
